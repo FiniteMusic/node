@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js - Una Introducción Completa</title>
+    <link rel="stylesheet" href="historia.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.6C17.302 21.6 21.6 17.302 21.6 12C21.6 6.698 17.302 2.4 12 2.4C6.698 2.4 2.4 6.698 2.4 12C2.4 17.302 6.698 21.6 12 21.6Z" fill="#539E43"/>
+                    <path d="M12.0002 15.7923C11.9067 15.7923 11.8133 15.7704 11.7273 15.7267L10.7758 15.1813C10.6389 15.1085 10.7031 15.0795 10.7453 15.0649C10.8676 15.0285 10.9462 15.0066 11.0686 14.9484C11.0831 14.9411 11.1049 14.9484 11.1195 14.9629L11.8498 15.3722C11.8716 15.3867 11.9004 15.3867 11.9222 15.3722L14.1111 14.1333C14.1329 14.1187 14.1472 14.0898 14.1472 14.0608V11.5904C14.1472 11.5614 14.1329 11.5325 14.1111 11.5179L11.9293 10.279C11.9076 10.2645 11.8787 10.2645 11.8569 10.279L9.67514 11.5179C9.65336 11.5325 9.63892 11.5614 9.63892 11.5904V14.0608C9.63892 14.0898 9.65336 14.1187 9.67514 14.1333L10.3181 14.5208C10.5505 14.6373 10.6944 14.4916 10.6944 14.3459V11.749C10.6944 11.7201 10.716 11.6911 10.745 11.6911H11.0539C11.0831 11.6911 11.1122 11.7201 11.1122 11.749V14.3459C11.1122 14.675 10.9447 14.8644 10.6218 14.8644C10.5284 14.8644 10.4567 14.8644 10.2534 14.762L9.63892 14.3969C9.46781 14.3023 9.36157 14.1187 9.36157 13.9293V11.6037C9.36157 11.4144 9.46781 11.2308 9.63892 11.1362L11.8278 9.88994C11.9915 9.8026 12.2094 9.8026 12.3731 9.88994L14.562 11.1362C14.7331 11.2308 14.8393 11.4144 14.8393 11.6037V13.9293C14.8393 14.1187 14.7331 14.3023 14.562 14.3969L12.3731 15.6431C12.287 15.6868 12.1936 15.7086 12.1002 15.7086L12.0002 15.7923Z" fill="white"/>
+                    <path d="M12.2748 13.9366C11.4585 13.9366 11.2697 13.5782 11.2697 13.2633C11.2697 13.2343 11.2988 13.2054 11.3279 13.2054H11.644C11.673 13.2054 11.6948 13.2272 11.6948 13.2562C11.7311 13.4528 11.8201 13.5564 12.282 13.5564C12.65 13.5564 12.8247 13.4746 12.8247 13.2635C12.8247 13.1152 12.7683 13.0062 12.1865 12.9482C11.6947 12.8975 11.4005 12.7881 11.4005 12.4223C11.4005 12.0856 11.6876 11.8599 12.1793 11.8599C12.7319 11.8599 12.9939 12.0783 13.023 12.4731C13.023 12.4876 13.0158 12.5021 13.0085 12.5166C13.0013 12.5239 12.9868 12.5311 12.9723 12.5311H12.6559C12.6269 12.5311 12.605 12.5094 12.5978 12.4804C12.5468 12.2838 12.4361 12.2329 12.1793 12.2329C11.8936 12.2329 11.8208 12.3492 11.8208 12.44C11.8208 12.5526 11.9099 12.5889 12.4654 12.6614C13.0137 12.734 13.245 12.8361 13.245 13.1946C13.245 13.5603 12.9359 13.7933 12.2676 13.7933L12.2748 13.9366Z" fill="white"/>
+                </svg>
+                Node.js
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#intro">Introducción</a></li>
+                    <li><a href="#arquitectura">Arquitectura</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#aplicaciones">Aplicaciones</a></li>
+                    <li><a href="#herramientas">Herramientas</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="intro">
+            <h1>Node.js</h1>
+            <p>Una Introducción Completa a Node.js y sus Casos de Uso</p>
+        </section>
+
+        <section>
+            <h2>¿Qué Es Node.js Y Por Qué Importa?</h2>
+            <p>Node.js es un entorno de ejecución usado para ejecutar código JavaScript en los servidores. Permite ejecutar JavaScript sin necesidad de un navegador web. Node.js es compatible con sistemas operativos como Windows, macOS y Linux. Es una plataforma de código abierto, por lo que todos los usuarios pueden acceder al código fuente de forma gratuita.</p>
+            
+            <blockquote>
+                Piensa en Node.js como el fiel compañero en tus aventuras de programación, no solo cualquier personaje en tu historia, sino un aliado fundamental que da vida a tus ideas innovadoras fuera de la narrativa web convencional.
+            </blockquote>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#3e863d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16V12" stroke="#3e863d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8H12.01" stroke="#3e863d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Código Abierto</h3>
+                    <p>En el desarrollo de software, los proyectos de código abierto son gratuitos y cualquier persona puede descargarlos, usarlos, modificarlos y distribuirlos. WordPress es un gran ejemplo de software de código abierto, aunque está lejos de ser el único.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12H18L15 21L9 3L6 12H2" stroke="#3e863d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Historia</h3>
+                    <p>Inicialmente, los creadores de Node.js lo diseñaron para arquitecturas en tiempo real, basadas en push. Estas arquitecturas incluyen chatbots, notificaciones, medios de transmisión y herramientas de colaboración, ofreciendo una forma de ejecutar JavaScript en el lado del servidor.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="#3e863d" stroke-width="2"/>
+                            <path d="M7 7V7C7 9.76142 9.23858 12 12 12V12C14.7614 12 17 9.76142 17 7V7" stroke="#3e863d" stroke-width="2"/>
+                            <path d="M7 17V17C7 14.2386 9.23858 12 12 12V12C14.7614 12 17 14.2386 17 17V17" stroke="#3e863d" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Aplicabilidad</h3>
+                    <p>Node.js es aplicable en diversas industrias, incluidas banca, atención médica, comunicaciones, comercio electrónico y entretenimiento. Te permite crear aplicaciones de escritorio, sitios web SaaS y aplicaciones móviles.</p>
+                </div>
+            </div>
+
+            <p>Por otro lado, JavaScript tradicionalmente hacía que las páginas web estáticas fueran interactivas, agregando funciones como animaciones y menús desplegables a través de etiquetas "&lt;script&gt;&lt;/script&gt;" en documentos HTML.</p>
+            
+            <p>Node.js surgió como una solución para simplificar este proceso, creando un entorno de ejecución más eficiente para JavaScript que amplía sus capacidades más allá de los navegadores web, permitiendo a los desarrolladores construir aplicaciones escalables y de alto rendimiento.</p>
+            
+            <p>La introducción de Node.js en 2009 abordó la ineficiencia de JavaScript al manejar muchas conexiones simultáneas sin bloquear. También proporciona todo lo necesario para ejecutar un programa JavaScript.</p>
+        </section>
+
+        <section id="arquitectura">
+            <h2>Arquitectura de Node.js</h2>
+            
+            <div class="architecture-diagram">
+                <svg class="architecture-img" width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="300" fill="#f9f9f9" rx="8"/>
+                    
+                    <!-- Application Layer -->
+                    <rect x="50" y="30" width="500" height="60" fill="#3e863d" rx="5"/>
+                    <text x="300" y="65" text-anchor="middle" fill="white" font-weight="bold">Aplicación Node.js</text>
+                    
+                    <!-- Node.js Core -->
+                    <rect x="50" y="110" width="500" height="80" fill="#68a063" rx="5"/>
+                    <text x="300" y="145" text-anchor="middle" fill="white" font-weight="bold">Core de Node.js</text>
+                    <text x="300" y="170" text-anchor="middle" fill="white" font-size="12">Event Loop | APIs | Callbacks</text>
+                    
+                    <!-- V8 and libuv -->
+                    <rect x="50" y="210" width="240" height="60" fill="#4b8b3b" rx="5"/>
+                    <text x="170" y="245" text-anchor="middle" fill="white" font-weight="bold">Motor V8 JavaScript</text>
+                    
+                    <rect x="310" y="210" width="240" height="60" fill="#4b8b3b" rx="5"/>
+                    <text x="430" y="245" text-anchor="middle" fill="white" font-weight="bold">libuv</text>
+                    
+                    <!-- Arrows -->
+                    <path d="M300 90 L300 110" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <path d="M300 190 L300 210" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- Arrowhead marker -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+            
+            <p>Node.js destaca en el manejo de un gran número de conexiones simultáneas y tareas intensivas en datos de manera eficiente. Es ideal para tareas que involucran el procesamiento rápido de grandes volúmenes de datos. Sin embargo, es menos adecuado para tareas intensivas en cómputo que requieren recursos significativos de la CPU. En tales casos, la naturaleza de un solo hilo de Node.js puede causar retrasos en responder a otras solicitudes.</p>
+            
+            <blockquote>
+                Para ilustrar mejor este concepto, imagina una cafetería. En una configuración de múltiples procesos, cada cliente (solicitud del servidor) es atendido por un barista diferente (hilo). Si todos los baristas están ocupados, los nuevos clientes esperan. En contraste, Node.js es como una cafetería con un barista altamente eficiente.
+            </blockquote>
+            
+            <p>Este barista maneja los pedidos rápidamente y en un flujo continuo, similar a Node.js que maneja las solicitudes utilizando operaciones de E/S no bloqueantes. Sin embargo, un pedido complejo en esta configuración es como una tarea intensiva en CPU en Node.js. Requiere más tiempo del barista, ralentizando el servicio para otros. Esto muestra cómo Node.js, aunque excelente para solicitudes rápidas y numerosas, puede tener dificultades con tareas que agotan mucho la CPU.</p>
+            
+            <p>La diferencia entre un solo hilo y múltiples procesos es simple: una arquitectura de un solo hilo puede funcionar y escalar más rápido que las configuraciones de múltiples procesos. Esto es lo que Ryan Dahl tenía en mente cuando creó Node.js.</p>
+        </section>
+
+        <section id="caracteristicas">
+            <h2>Características Clave De Node.js</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Escalabilidad</h3>
+                    <p>La característica más atractiva es la capacidad de dividir programas horizontalmente a través de "procesos secundarios". Los procesos secundarios hacen que Node.js ejecute múltiples tareas a la vez y optimice la potencia del servidor. Tienen sus propios recursos, lo que reduce su impacto en otros procesos mientras manejan tareas grandes o enfrentan errores.</p>
+                </div>
+                <div class="card">
+                    <h3>Escrito En JavaScript</h3>
+                    <p>Si te sientes cómodo trabajando con JavaScript, es probable que Node.js te resulte más fácil. Por eso, Node.js es una opción popular entre los desarrolladores. Además, el uso de JavaScript durante todo el proceso de desarrollo promueve la fiabilidad y la reutilización del código.</p>
+                </div>
+                <div class="card">
+                    <h3>Arquitectura Orientada a Eventos</h3>
+                    <p>En Node.js, todo gira en torno a los eventos. Se desencadenan eventos cuando interactúas con tu aplicación, como enviar un formulario o hacer clic en un botón. Estos eventos son pequeños fragmentos de código que se ejecutan cuando ocurren acciones específicas.</p>
+                </div>
+                <div class="card">
+                    <h3>Lenguaje de Un Solo Hilo</h3>
+                    <p>Node.js procesa todas las solicitudes utilizando un solo hilo dentro de lo que se conoce como el bucle de eventos. Esto es similar a un malabarista que mantiene múltiples pelotas en el aire. En lugar de concentrarse en una pelota (tarea) hasta que sea atrapada (completada), el malabarista continúa lanzando y atrapando varias pelotas.</p>
+                </div>
+                <div class="card">
+                    <h3>Transmisión Rápida de Datos</h3>
+                    <p>Node.js utiliza el motor JavaScript V8. La integración de este motor avanzado aumenta la velocidad y permite que las aplicaciones web manejen flujos de datos rápidos. Además, facilita la gestión y el procesamiento de grandes cantidades de datos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="aplicaciones">
+            <h2>Principales 10 Aplicaciones Empresariales para Node.js</h2>
+            
+            <div class="list-item">
+                <h3>1. Proxys del Lado del Servidor</h3>
+                <p>Node.js es ideal para crear proxys del lado del servidor y aplicaciones de red. Puede agregar datos de múltiples fuentes de terceros y manejar eficientemente un alto volumen de conexiones simultáneas.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>2. Aplicaciones en Tiempo Real y Chatbots</h3>
+                <p>Node.js se utiliza comúnmente para crear funciones de chat en tiempo real en sitios web. Permite a los desarrolladores crear eventos y notificaciones que se pueden usar para habilitar la mensajería instantánea entre usuarios.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>3. Transmisión de Datos</h3>
+                <p>La transmisión de datos requiere un flujo continuo de información creada por varias fuentes y dispositivos. Puedes utilizar Node.js para crear características sólidas de transmisión de datos que permitan procesar archivos mientras se cargan.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>4. Panel de Control para Operadores de Bolsa</h3>
+                <p>Los corredores dependen del software de trading, para realizar un seguimiento de los precios de las acciones. Node.js puede transmitir datos desde APIs y funciona con sockets web para proporcionar actualizaciones en tiempo real.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>5. Línea de Comandos</h3>
+                <p>La creación de aplicaciones de línea de comandos es otra área en la que Node.js brilla. Estas aplicaciones permiten a las empresas automatizar operaciones, gestionar archivos y realizar acciones especificadas sin una interfaz gráfica de usuario.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>6. Arquitectura de Microservicios</h3>
+                <p>Node.js es adecuado para construir este enfoque. Facilita la instalación de varios servidores para microservicios específicos y crea direcciones de enrutamiento adecuadas para cada uno.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>7. Soluciones de Big Data y Analítica</h3>
+                <p>Las transmisiones de Node.js le permiten construir un pipeline efectivo en el que los datos comienzan en un punto y terminan en el otro.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>8. Scraping y Automatización Web</h3>
+                <p>El scraping de datos es la recopilación automática de información o datos extraídos de sitios web. Las bibliotecas más utilizadas de Node.js para el scraping web son "request" y "cheerio".</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>9. Aplicaciones de Página Única (SPAs)</h3>
+                <p>Otro uso frecuente de Node.js es crear aplicaciones de página única complejas. Esto es ideal para aplicaciones de una sola página impulsadas por datos, donde toda la aplicación cabe en una sola página.</p>
+            </div>
+            
+            <div class="list-item">
+                <h3>10. Herramientas de Colaboración en Tiempo Real</h3>
+                <p>Node.js ayuda a las empresas a desarrollar herramientas de colaboración en tiempo real, ya que gestiona de manera efectiva actividades y solicitudes pesadas.</p>
+            </div>
+        </section>
+
+        <section id="herramientas">
+            <h2>5 Herramientas y Frameworks Comunes Utilizados con Node.js</h2>
+            
+            <p>Un framework es una estructura de software preconstruida que sirve como base para crear aplicaciones web. Incluye bibliotecas, módulos y protocolos para simplificar tareas de desarrollo como enrutamiento, interfaz de base de datos y autenticación.</p>
+            
+            <div class="frameworks-container">
+                <div class="framework-card">
+                    <h3>Socket.io</h3>
+                    <p>Este framework admite comunicación bidireccional en tiempo real entre un cliente y un servidor. Socket.io es una plataforma Node.js de pila completa que acepta diferentes lenguajes de programación.</p>
+                </div>
+                
+                <div class="framework-card">
+                    <h3>Mongoose</h3>
+                    <p>Esta herramienta es una biblioteca de Modelado de Datos de Objetos (ODM) que funciona con MongoDB en aplicaciones Node.js. Mongoose maneja asociaciones de datos, realiza validaciones de esquemas y convierte objetos.</p>
+                </div>
+                
+                <div class="framework-card">
+                    <h3>Express.js</h3>
+                    <p>Express.js es un framework popular y básico para construir aplicaciones y APIs en línea. Es de código abierto, gratuito y distribuido bajo la licencia MIT. Express.js es el framework Node.js más rápido.</p>
+                </div>
+                
+               <div class="framework-card">
+    <h3>Babel</h3>
+    <p>Babel es una gran herramienta para compilar código JavaScript ES6+ en una versión compatible con versiones anteriores de JavaScript. Es una herramienta de desarrollo frontend que admite la versión más reciente de JavaScript. Además, Babel puede cambiar la sintaxis y admitir características como polyfill. Pero no incluye ningún plugin incorporado.</p>
+</div>
+
+<div class="framework-card">
+    <h3>NPM</h3>
+    <p>Como gestor de paquetes de Node.js, NPM permite a los desarrolladores instalar y gestionar paquetes de Node.js. Cuando instalas Node.js, la aplicación NPM y el soporte integrado también se instalarán en tu computadora. Esta herramienta permite a los desarrolladores descargar e instalar paquetes con código JavaScript.</p>
+</div>
+              </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>©2025 Node.js</p>
+            <p>La información proporcionada en esta página está basada en documentación oficial de Node.js.</p>
+        </div>
+    </footer>
+</body>
+</html>
